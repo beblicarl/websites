@@ -1,0 +1,123 @@
+<!DOCTYPE html>  <!---this simply tells your website this document is an html document --->
+<html>  <!-- this is the overall containing tag and every other html tag should be in them  (Parent tag)--> 
+    <head> <!-- title, settings, meta data and the likes (child tag)-->
+        <title> Carl's Website </title>
+        <meta charset="UTF-8">  <!-- this is a tag that gives us information about our file. It's giving us meta data-->
+        <meta name="description" content=" This is my very first website and i hope you love it Jida"> <!-- when you google stuff, the description you see is the meta description data-->
+        <meta name="author" content="Carl Bebli">
+        <meta name="keyword" content="HTML,100daysofcode, codenewbie">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0"> <!--this ensures your webpage is able to resize perfectly regardless of the device you use in viewing the webpage-->
+        <link rel="stylesheet" href="style.css"> <!--This is used tp link the stylesheet css file to the html file and it must always be in the head-->
+    </head>
+    <body>  <!-- content of the page (child tag)-->
+        <h1> Carl's website </h1>
+        <br/> <!-- Break tag to give us space between the h1 and p--> 
+        <hr/> <!-- This is to draw a horizontal line betwen the h1 and p-->
+        <p> This is my first <b>paragraph</b></p> <!-- <b> for bold and <i> for italisize-->
+        <p> <big>This</big> is <small>my</small> second <i>paragraph</i></p> <!-- big and small tag to control size of texts-->
+        <p> This is my third <b><i>paragraph</i></b></p>
+        <p> Water is H<sub>2</sub>0 and 100 is 10<sup>2</sup></p> <!-- subscript and raise to the power-->
+        <p style="color: blueviolet;background-color: darkblue;"> Jida is the best software developer in the world</p>
+        <p style="color: red;background-color: coral;"> Deborah is the best data scientist in the World</p>
+        <a href="https://www.google.com"target="_blank">Google's Homepage</a> <!--- <a is used to create links. This is how to create a link and href simply is assigned to the website you want this link to navigate to. target="_blank" opens the link in a new tab instead of on the same page -->
+        <br/>
+        <img width="450" src="https://scontent.facc5-2.fna.fbcdn.net/v/t1.0-9/80572086_2228550497245769_8404389599631114240_o.jpg?_nc_cat=104&ccb=3&_nc_sid=09cbfe&_nc_eui2=AeHKv6XzHOedtxdDG71V-PM767fIou5KnPjrt8ii7kqc-JETx5fAs85CwDJzDrmZDkt9haCoX7fe30u_QYf8bBfc&_nc_ohc=POY5hlP5shMAX_Bu7To&_nc_ht=scontent.facc5-2.fna&oh=5ab371986640fb6126fb660aba0603cd&oe=604962B1" alt=" The Beautiful Girl"/> <!-- src is the source of the image and alt is the description ...Image doesnt have a closing tag-->
+        <!-- <video height="450"src="https://www.facebook.com/abena.d.nyantakyiwaa/videos/1041813815919449" poster="deborah.jpg"controls loop ></video> the video tag has a closing tag unlike the image tag, the poster is the thumbnail that shows before you click the video, the controls allow you to have access to video controls (play,pause,stop...), the loop plays the video repeatedly and autoplay plays the video without you having to click play--> 
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fabena.d.nyantakyiwaa%2Fvideos%2F1041813815919449&width=500&show_text=false&height=500&appId" width="500" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        <ul>
+            <li>Deborah</li> <!-- unordered list-->
+            <li>Ofosuhemaa</li>
+            <li>Asare</li>
+        </ul>
+        <ol type="i">
+            <li>Jida</li>    <!-- ordered list, instead of dots, you can change the way the ordering should be done, either by alphabetical order, numerical order or roman numerals-->
+            <li>Adwoa</li>
+            <li>Asare</li>
+        <table> <!-- we use this to draw a table-->
+            <thead><!-- this signifies the table head-->
+                <caption><h1>List of items Abena wants on val's day</h1></caption> <!-- this is used to caption-->
+                <tr> <!-- this stands for the table row-->
+                    <th>Cheap Items</th> <!-- this stands for the table header-->
+                    <th>Normal priced Items</th>
+                    <th>Expensive Items</th>   
+                </tr>
+            </thead>
+            <tbody><!-- this signifies the body of the table-->
+                <tr>
+                    <td>Val's day card</td> <!-- table data, one row of table info is wrapped with the table row tag-->
+                    <td>Holandia</td>
+                    <td>Make up set</td>
+                </tr>
+                <tr>
+                    <td>a nice blouse</td>
+                    <td>Fried rice</td>
+                    <td>An Iphone</td>
+                </tr>
+            </tbody>
+        </table>
+        </ol>
+        <h1>Carl is a rich man</h1> <!-- both paragraphs take up a whole block of width but there's a way to put them all on the same line and that's when we use spans-->
+            <h1> Carl is a rich man</h1>
+            <span>Jida is a rich woman</span> <!-- You'd realize both sentences are on the same line now due to the span wrapper-->
+            <span>Jida is a rich woman</span>
+        <hr>
+            <div>beautiful</div> <!-- div is used to put them on different lines-->
+            <div>beautiful</div> <!-- in conclusion spans are inline elements and blocks are block elements-->
+        <hr>
+            <input type="text" value="Enter Your Username"/>
+            <input type="date"/>
+            <input type="checkbox" name="Enter your name" >
+            <textarea name="text" cols="30" rows="10">
+                Enter a paragraph
+            </textarea>
+            <!--<iframe src="https://www.giraffeacademy.com/" width="1000" height="800">facebook webpage</iframe> iframe is used to embedd a whole new webpage into your webpage-->
+
+            <p style="border: 2px solid black;">Mummy would have many beautiful grandchildren very soon</p> <!--when it comes to borders it takes three arguments, the first one is the  width (thickness)of the border, style of the border(solid) and then color is the last-->
+            <p style="border: 2px solid black; width: 300px;">Mummy would have many beautiful grandchildren very soon</p> <!--when you specify the width  of the border it doesn't fill up the page anymore-->
+            <!--we use margins to control spacing outside an element and padding to control spacing inside an element-->
+            <div style="padding: 20px 10px 20px 10px ;background-color: darkgoldenrod;"> <!-- padding is done in a clockwise manner so instead of specifyinf top, right, bottom and left we can just type 4 figure 10 20 30 50..like i said before, padding controls the spacing inside the element-->
+                Holy Child secondary school is the worst in Ghana right after Merries.
+            </div>
+            <div style="margin: 20px 10px 20px 10px ;background-color: brown;"> <!-- margin is done in a clockwise manner so instead of specifyinf top, right, bottom and left we can just type 4 figure 10 20 30 50..like i said before, margin controls the spacing outside the element-->
+                Presec is the best school in Africa.
+            </div>
+            <img width = "300" style="float: right;border-radius: 50%;" src="https://scontent.facc5-2.fna.fbcdn.net/v/t1.0-9/67506670_2278820618905065_3130618713074565120_o.jpg?_nc_cat=111&ccb=3&_nc_sid=cdbe9c&_nc_eui2=AeGL8feX91w8k6bj89zanXpkTiIGgVjq4jROIgaBWOriNNQJzl7BZcUmgkssqYo65DNEQBj4S7aqdu0QWJ1eW6hW&_nc_ohc=wWVM00cpLegAX8UuyB5&_nc_ht=scontent.facc5-2.fna&oh=740e9cbbc021bbe03ec0d61c1bd69943&oe=604B6311"/>
+            <p style="font-style:italic;font-size: larger;">She's <b>Adwoa Asare</b>. The one with the brightest smile. One of the most determined individual i'v ever met. I bless the day i met her. She has had a very positive influence on my life. She is the best <big><b>software developer</b></big> in the world. She is the most important <big><b>software developer</b></big> in the world. She's the best mentor in the world. She's my sister. I count myself lucky to have someone like her in my life. She's destined for grateful. Amen !!!! Um yeah, she doesn't eat turkey because she doesn't like the after-smell i think. She has dreads on so she reminds me so much of <big>Ebony Reigns</big> I sometimes wonder if she can sing better than <b>Shatta Wale</b> now. I also wanted to test the floating feature. lol</p>
+            
+                <ol>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ol>
+            <!-- Natuarlly lists are ordered in a block format, meaning they take up the whole space. Let's try using display to change that-->
+                <ol>
+                    <li style="display: inline;">Home</li>
+                    <li style="display: inline;">About</li>
+                    <li style="display: inline;">Contact</li> 
+                </ol>
+            </hr>
+            <!-- There are 4 types of positioning uin css ; static, absolute, relative and fixed position. 1. The default positioning is static. The html files will display in the exact order as you typed/positioned them. 2. The relative position takes an element and moves it a specified number of pixels away from it's initial static position.-->
+            <hr>
+                <div style="width: 100px; height: 100px; background-color: blueviolet;"></div> <!-- original static positions of the boxes-->
+                <div style="width: 100px; height: 100px; background-color:red;"></div>
+            </hr>
+            <hr>
+                <div style="position:relative; top: 40px; left: 30px; width: 100px; height: 100px; background-color: blueviolet;"></div> <!-- original static positions of the boxes being changed to a relative position from the top and left too hence it overlaps the second box-->
+                <div style="width: 100px; height: 100px; background-color:red;"></div>
+            </hr>
+            <hr>
+                <!--<div style="position:absolute; top:100px; left: 100px; width: 100px; height: 100px; background-color: blueviolet;"></div> < original static positions of the boxes. As the relative position positions itself relative to where its supposed to be, the absolute position positions itself relative to the first htlm tag or code at the top of the page
+                <div style="width: 100px; height: 100px; background-color:red;"></div> -->
+            </hr>
+            <hr>
+                <img style="border-radius: 50%; opacity:1.0; box-shadow: 2px 2px  red; width: 150px;position: fixed;bottom: 0px; left: 1150px;"
+                src="https://scontent.facc5-2.fna.fbcdn.net/v/t31.0-8/290597_115321295235377_6290732_o.jpg?_nc_cat=104&ccb=3&_nc_sid=cdbe9c&_nc_eui2=AeG3oqYfPDLGPO0ZNkHVlYK075wOEkLpPJPvnA4SQuk8k_tpzz1d2eeVyzcqHqS4WG92hZEiKqXlfBZaxfiYMny9&_nc_ohc=X2EuiNbmHHcAX-kzY11&_nc_ht=scontent.facc5-2.fna&oh=e9cea5274f4687b852b03bc48b0eb35e&oe=604B2FDC" >
+                <!-- i used to border-radius to shape the edges of the pictre, i used opacity to make it opaque. I used box-shadow to give the red color at the back. Box-shadow takes 3 arguments, the first is the horizontal distance of the shadow, second is veritcal distance and the last is the color-->
+            </hr>
+            
+            
+    </body>
+
+
+
+</html> <!-- this is the overall containing tag and every other html tag should be in them (parent tag)-->
